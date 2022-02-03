@@ -3,7 +3,7 @@ body {
 }
 /* #212121 text main color */
 /* #2196F3 text accent and hover color */
-/* #757575 text paragraph and phone color */
+/* #757575 text paragraph and contacts color */
 /* #FFFFFF; hero accent and background of the page color*/
 /* #2F303A hero background color */
 /* #E5E5E5; Work sphere section color */
@@ -16,7 +16,7 @@ body {
 .brandname {
   color: #212121;
 }
-.brandname-accent {
+.brandname-one {
   color: #2196f3;
 }
 /* site-nav */
@@ -31,6 +31,10 @@ body {
 .section-title {
   color: #212121;
 }
+/* paragraphs */
+.section-content {
+  color: #757575;
+}
 /* hero */
 .hero {
   background-color: #2f303a;
@@ -38,5 +42,42 @@ body {
 }
 .hero-button {
   background-color: #2196f3;
+  color: #ffffff;
+}
+/* section Чем мы занимаемся */
+.section {
+  background-color: #e5e5e5;
+}
+/* section Наша команда */
+.team-section {
+  background-color: #f5f4fa;
+}
+.team-item {
+  background-color: #ffffff;
+}
+/* contacts */
+.contacts-nav {
+  color: #757575;
+}
+.contacts-nav:hover,
+.contacts-nav:focus {
+  color: #2196f3;
+}
+.contacts-link {
+  color: #ffffff;
+  opacity: 60%;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #2196f3;
+}
+.contacts-geoposition {
+  color: #ffffff;
+}
+/* footer */
+.page-footer {
+  background-color: #2f303a;
+}
+.brandname-two {
   color: #ffffff;
 }
