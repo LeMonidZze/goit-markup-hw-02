@@ -9,6 +9,7 @@
 }
 
 body {
+  color: var(--primary-text-color);
   background-color: var(--hero-accent-color);
   font-family: Roboto, sans-serif;
 }
@@ -107,6 +108,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-accent-color);
+  background-color: var(--hero-accent-color);
+}
 /* section Чем мы занимаемся */
 .section {
   background-color: var(--work-section-background);
@@ -151,6 +157,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.contacts-geoposition:hover,
+.contacts-geoposition:focus {
+  color: var(--title-accent-color);
 }
 /* Navigation-buttons */
 .buttons {
