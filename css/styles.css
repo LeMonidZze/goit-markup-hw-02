@@ -10,6 +10,7 @@
 
 body {
   background-color: var(--hero-accent-color);
+  font-family: Roboto, sans-serif;
 }
 /* #212121 text main color */
 /* #2196F3 text accent and hover color */
@@ -24,37 +25,87 @@ body {
 }
 /* brandname */
 .brandname {
+  /* --new-accent: red: окремий акцент доступний тільки в 1 секції */
   color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .brandname-one {
   color: var(--title-accent-color);
+}
+.brandname-two {
+  color: var(--hero-accent-color);
 }
 /* site-nav */
 .site-nav .link {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--title-accent-color);
 }
+
 /* Headings */
 .section-title {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-heading {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* paragraphs */
 .section-content {
   color: var(--paragrapg-contacts-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* hero */
 .hero {
   background-color: var(--hero-background-color);
   color: var(--hero-accent-color);
 }
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .hero-button {
   background-color: var(--title-accent-color);
   color: var(--hero-accent-color);
+  border-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 /* section Чем мы занимаемся */
 .section {
@@ -70,6 +121,11 @@ body {
 /* contacts */
 .contacts-nav {
   color: var(--paragrapg-contacts-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts-nav:hover,
 .contacts-nav:focus {
@@ -78,6 +134,11 @@ body {
 .contacts-link {
   color: var(--hero-accent-color);
   opacity: 60%;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -85,22 +146,46 @@ body {
 }
 .contacts-geoposition {
   color: var(--hero-accent-color);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* Navigation-buttons */
 .buttons {
   cursor: pointer;
   background-color: var(--team-section-background);
   color: var(--primary-text-color);
+  border-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .buttons:hover,
 .buttons:focus {
   color: var(--hero-accent-color);
   background-color: var(--title-accent-color);
 }
+/* cards */
+.cards {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.cards-content {
+  color: var(--paragrapg-contacts-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
 /* footer */
 .page-footer {
   background-color: var(--hero-background-color);
-}
-.brandname-two {
-  color: var(--hero-accent-color);
 }
