@@ -10,21 +10,30 @@
 
   <body>
     <!--Шапка-->
-    <header>
-      <!--logo-header-->
-      <a href="" lang="en">WebStudio</a>
+    <header class="page-header">
+      <!--brand-name-header-->
+      <a href="" class="brandname" lang="en"
+        ><span class="brandname-one">Web</span>Studio</a
+      >
       <!--navigation-->
       <nav>
-        <ul>
-          <li><a href="/index.html">Студия</a></li>
-          <li><a href="/portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="site-nav">
+          <li><a href="/index.html" class="link">Студия</a></li>
+          <li><a href="/portfolio.html" class="link">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
         </ul>
+        <!-- ul>li*2>p+p швидке написання коду-->
       </nav>
       <!--Cantacts info-->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts">
+        <li>
+          <a href="mailto:info@devstudio.com" class="contacts-nav"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="contacts-nav">+38 096 111 11 11</a>
+        </li>
       </ul>
     </header>
     <!--main-->
@@ -32,11 +41,11 @@
       <!-- Навигация Портфолио -->
       <h1 hidden>Навигация Портфолио</h1>
       <ul>
-        <li><button type="button">Все</button></li>
-        <li><button type="button">Веб-сайты</button></li>
-        <li><button type="button">Приложения</button></li>
-        <li><button type="button">Дизайн</button></li>
-        <li><button type="button">Маркетинг</button></li>
+        <li><button type="button" class="buttons">Все</button></li>
+        <li><button type="button" class="buttons">Веб-сайты</button></li>
+        <li><button type="button" class="buttons">Приложения</button></li>
+        <li><button type="button" class="buttons">Дизайн</button></li>
+        <li><button type="button" class="buttons">Маркетинг</button></li>
       </ul>
 
       <!-- Карточки -->
@@ -44,84 +53,97 @@
         <li>
           <a href="">
             <img src="./img/card-1.jpg" alt="Ноутбук с веб-сайтом" width="370" height="294" />
-          <h2>Технокряк</h2>
-          <p>Веб-сайт</p>
+          <h2 class="section-title">Технокряк</h2>
+          <p class="section-content">Веб-сайт</p>
+          </a>
         </li>
         <li>
           <a href="">
             <img src="./img/card-2.jpg" alt="Постер" width="370" height="294" />
           <h2>Постер New Orlean vs Golden Star</h2>
-          <p>Дизайн</p>
+          <p class="section-content">Дизайн</p>
           </a>
         </li>
         <li>
           <a>
             <img src="./img/card-3.jpg" alt="Логотип ресторана" width="370" height="294" />
-          <h2>Ресторан Seafood</h2>
-          <p>Приложение</p>
+          <h2 class="section-title">Ресторан Seafood</h2>
+          <p class="section-content">Приложение</p>
           </a>
         </li>
         <li>
           <a href="">
             <img src="./img/card-4.jpg" alt="Наушники" width="370" height="294" />
-          <h2>Проект Prime</h2>
-          <p>Маркетинг</p>
+          <h2 class="section-title">Проект Prime</h2>
+          <p class="section-content">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="">
             <img src="./img/card-5.jpg" alt="Две коробки" width="370" height="294" />
-          <h2>Проект Boxes</h2>
-          <p>Приложение</p>
+          <h2 class="section-title">Проект Boxes</h2>
+          <p class="section-content">Приложение</p>
           </a>
         </li>
         <li>
           <img src="./img/card-6.jpg" alt="Монитор с веб-сайтом" width="370" height="294" />
-          <h2>Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
+          <h2 class="section-title">Inspiration has no Borders</h2>
+          <p class="section-content">Веб-сайт</p>
           </a>
         </li>
         <li>
           <a href="">
             <img src="./img/card-7.jpg" alt="Книга с рисунками" width="370" height="294" />
-          <h2>Издание Limited Edition</h2>
-          <p>Дизайн</p>
+          <h2 class="section-title">Издание Limited Edition</h2>
+          <p class="section-content">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="">
             <img src="./img/card-8.jpg" alt="Бирка" width="370" height="294" />
-          <h2>Проект LAB</h2>
-          <p>Маркетинг</p>
+          <h2 class="section-title">Проект LAB</h2>
+          <p class="section-content">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="">
             <img src="./img/card-9.jpg" alt="Ноутбук с приложением" width="370" height="294" />
-          <h2>Growing Business</h2>
-          <p>Приложение</p>
+          <h2 class="section-title">Growing Business</h2>
+          <p class="section-content">Приложение</p>
           </a>
         </li>
       </ul>
     </main>
-
+    
     <!--footer-->
-    <footer>
+    <footer class="page-footer">
       <!--logo-footer-->
-      <a href="" lang="en">WebStudio</a>
+      <a href="" class="brandname" lang="en"
+        ><span class="brandname-one">Web</span
+        ><span class="brandname-two">Studio</span></a
+      >
 
       <address>
-        <ul>
+        <ul class="contacts">
           <li>
             <a
               href="https://goo.gl/maps/2GUoueHVRLLiKJBr9"
               target="_blank"
               rel="noopener noreferrer"
+              class="contacts-geoposition"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="contacts-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contacts-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>

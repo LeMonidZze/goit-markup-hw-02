@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--hero-accent-color);
 }
 /* #212121 text main color */
 /* #2196F3 text accent and hover color */
@@ -32,6 +32,7 @@ body {
 /* site-nav */
 .site-nav .link {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -40,6 +41,7 @@ body {
 /* Headings */
 .section-title {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 /* paragraphs */
 .section-content {
@@ -83,6 +85,17 @@ body {
 }
 .contacts-geoposition {
   color: var(--hero-accent-color);
+}
+/* Navigation-buttons */
+.buttons {
+  cursor: pointer;
+  background-color: var(--team-section-background);
+  color: var(--primary-text-color);
+}
+.buttons:hover,
+.buttons:focus {
+  color: var(--hero-accent-color);
+  background-color: var(--title-accent-color);
 }
 /* footer */
 .page-footer {
