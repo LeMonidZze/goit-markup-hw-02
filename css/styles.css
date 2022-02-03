@@ -1,0 +1,22 @@
+body {
+  background-color: #ffffff;
+}
+/* #212121 text main color */
+/* #2196F3 text accent color */
+/* #757575 text paragraph and phone color */
+/* #FFFFFF; hero accent and background of the page color*/
+/* #2F303A hero background color */
+/* #E5E5E5; Work sphere section color */
+/* #F5F4FA; Our team section background color*/
+
+.list {
+  list-style: none;
+}
+/* brandname */
+.brandname {
+  color: #212121;
+}
+.brandname-accent {
+  color: #2196f3;
+}
+/* site-nav */
