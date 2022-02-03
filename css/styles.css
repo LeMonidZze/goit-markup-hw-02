@@ -2,7 +2,7 @@ body {
   background-color: #ffffff;
 }
 /* #212121 text main color */
-/* #2196F3 text accent color */
+/* #2196F3 text accent and hover color */
 /* #757575 text paragraph and phone color */
 /* #FFFFFF; hero accent and background of the page color*/
 /* #2F303A hero background color */
@@ -20,3 +20,23 @@ body {
   color: #2196f3;
 }
 /* site-nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+/* Headings */
+.section-title {
+  color: #212121;
+}
+/* hero */
+.hero {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+.hero-button {
+  background-color: #2196f3;
+  color: #ffffff;
+}
