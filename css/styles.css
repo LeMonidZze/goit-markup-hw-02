@@ -4,7 +4,6 @@
   --paragrapg-contacts-color: #757575;
   --hero-accent-color: #ffffff;
   --hero-background-color: #2f303a;
-  --work-section-background: #e5e5e5;
   --team-section-background: #f5f4fa;
 }
 
@@ -18,7 +17,6 @@ body {
 /* #757575 text paragraph and contacts color */
 /* #FFFFFF; hero accent and background of the page color*/
 /* #2F303A hero background color */
-/* #E5E5E5; Work-section background color */
 /* #F5F4FA; Our team section background color*/
 
 .list {
@@ -58,7 +56,7 @@ body {
 .section-title {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -67,7 +65,7 @@ body {
 .section-heading {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -100,7 +98,7 @@ body {
   cursor: pointer;
   font-family: inherit;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -113,10 +111,7 @@ body {
   color: var(--title-accent-color);
   background-color: var(--hero-accent-color);
 }
-/* section Чем мы занимаемся */
-.section {
-  background-color: var(--work-section-background);
-}
+
 /* section Наша команда */
 .team-section {
   background-color: var(--team-section-background);
@@ -184,13 +179,14 @@ body {
 .cards {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .cards-content {
   color: var(--paragrapg-contacts-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
