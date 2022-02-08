@@ -1,6 +1,7 @@
 :root {
   --primary-text-color: #212121;
   --title-accent-color: #2196f3;
+  --button-hover-hero: #188ce8;
   --paragrapg-contacts-color: #757575;
   --hero-accent-color: #ffffff;
   --hero-background-color: #2f303a;
@@ -19,8 +20,16 @@ body {
 /* #2F303A hero background color */
 /* #F5F4FA; Our team section background color*/
 
+/* Container */
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .list {
   list-style: none;
+  padding: 0;
 }
 /* brandname */
 .brandname {
@@ -63,6 +72,7 @@ body {
   text-transform: uppercase;
 }
 .section-heading {
+  margin-bottom: 50px;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 700;
@@ -73,17 +83,25 @@ body {
 }
 /* paragraphs */
 .section-content {
+  margin-bottom: 94px;
   color: var(--paragrapg-contacts-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/* photos */
+.photos {
+  margin-bottom: 94px;
+}
 /* hero */
 .hero {
   background-color: var(--hero-background-color);
   color: var(--hero-accent-color);
+  margin-bottom: 94px;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -108,8 +126,8 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--title-accent-color);
-  background-color: var(--hero-accent-color);
+  color: var(--hero-accent-color);
+  background-color: var(--button-hover-hero);
 }
 
 /* section Наша команда */
