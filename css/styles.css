@@ -6,12 +6,30 @@
   --hero-accent-color: #ffffff;
   --hero-background-color: #2f303a;
   --team-section-background: #f5f4fa;
+  --general-margin-bottom: 94px;
+  --card-set-gap: 20px;
+  --card-border: #eeeeee;
 }
 
 body {
   color: var(--primary-text-color);
   background-color: var(--hero-accent-color);
   font-family: Roboto, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* #212121 text main color */
 /* #2196F3 text accent and hover color */
@@ -25,7 +43,8 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .list {
   list-style: none;
@@ -83,7 +102,7 @@ body {
 }
 /* paragraphs */
 .section-content {
-  margin-bottom: 94px;
+  margin-bottom: var(--general-margin-bottom);
   color: var(--paragrapg-contacts-color);
   font-size: 14px;
   line-height: 1.71;
@@ -91,13 +110,13 @@ body {
 }
 /* photos */
 .photos {
-  margin-bottom: 94px;
+  margin-bottom: var(--general-margin-bottom);
 }
 /* hero */
 .hero {
   background-color: var(--hero-background-color);
   color: var(--hero-accent-color);
-  margin-bottom: 94px;
+  margin-bottom: var(--general-margin-bottom);
 }
 .hero-title {
   margin-top: 0;
@@ -188,12 +207,18 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.buttons-row {
+  display: flex;
+  flex-direction: row;
+}
 .buttons:hover,
 .buttons:focus {
   color: var(--hero-accent-color);
   background-color: var(--title-accent-color);
 }
 /* cards */
+.card-item * {
+}
 .cards {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -202,12 +227,31 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+.card-set {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.card-set > .card-item {
+  flex-basis: calc(100% / 3 -var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
 .cards-content {
   color: var(--paragrapg-contacts-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 4px;
+}
+.card-footer {
+  padding: 20px 24px;
+  border: 1px solid var(--card-border);
+  border-top: transparent;
 }
 /* footer */
 .page-footer {
