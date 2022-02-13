@@ -17,30 +17,36 @@
   <body>
     <!--Шапка-->
     <header class="page-header container">
-      <!--brand-name-header-->
-      <a href="" class="brandname" lang="en"
-        ><span class="brandname-one">Web</span>Studio</a
-      >
+      <div class="navigation">
+        <!--brand-name-header-->
+        <a href="" class="brandname" lang="en"
+          ><span class="brandname-one">Web</span>Studio</a
+        >
+      </div>
       <!--navigation-->
-      <div class="container">
+      <div class="container navigation">
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
           <!-- ul>li*2>p+p швидке написання коду-->
         </nav>
       </div>
       <!--Contacts info-->
-      <div class="container">
+      <div class="container navigation">
         <ul class="contacts list">
-          <li>
+          <li class="nav-item">
             <a href="mailto:info@devstudio.com" class="contacts-nav"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="nav-item">
             <a href="tel:+380961111111" class="contacts-nav"
               >+38 096 111 11 11</a
             >
@@ -48,29 +54,35 @@
         </ul>
       </div>
     </header>
+
     <!--main-->
     <main>
       <section>
         <!-- Навигация Портфолио -->
-        <h1 hidden>Навигация Портфолио</h1>
-        <ul class="button-row list container">
-          <li><button type="button" class="buttons">Все</button></li>
-          <li><button type="button" class="buttons">Веб-сайты</button></li>
-          <li><button type="button" class="buttons">Приложения</button></li>
-          <li><button type="button" class="buttons">Дизайн</button></li>
-          <li><button type="button" class="buttons">Маркетинг</button></li>
-        </ul>
+        <h1 class="visually-hidden">Навигация Портфолио</h1>
+        <div class="button-wrapper">
+          <ul class="button-row list container">
+            <li><button type="button" class="buttons">Все</button></li>
+            <li><button type="button" class="buttons">Веб-сайты</button></li>
+            <li><button type="button" class="buttons">Приложения</button></li>
+            <li><button type="button" class="buttons">Дизайн</button></li>
+            <li><button type="button" class="buttons">Маркетинг</button></li>
+          </ul>
+        </div>
         <!-- Карточки -->
         <div class="container">
           <ul class="card-set list">
             <li class="card-item">
               <a href="" class="cards">
-                <img
-                  src="./img/card-1.jpg"
-                  alt="Ноутбук с веб-сайтом"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    src="./img/card-1.jpg"
+                    alt="Ноутбук с веб-сайтом"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
                 <div class="card-footer">
                   <h2 class="cards">Технокряк</h2>
                   <p class="cards-content">Веб-сайт</p>
@@ -80,12 +92,14 @@
 
             <li class="card-item">
               <a href="" class="cards">
-                <img
-                  src="./img/card-2.jpg"
-                  alt="Постер"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    src="./img/card-2.jpg"
+                    alt="Постер"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="card-footer">
                   <h2 class="cards">Постер New Orlean vs Golden Star</h2>
                   <p class="cards-content">Дизайн</p>
@@ -95,12 +109,14 @@
 
             <li class="card-item">
               <a href="" class="cards">
-                <img
-                  src="./img/card-3.jpg"
-                  alt="Логотип ресторана"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    src="./img/card-3.jpg"
+                    alt="Логотип ресторана"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="card-footer">
                   <h2 class="cards">Ресторан Seafood</h2>
                   <p class="cards-content">Приложение</p>
@@ -110,12 +126,15 @@
 
             <li class="card-item">
               <a href="" class="cards">
-                <img
-                  src="./img/card-4.jpg"
-                  alt="Наушники"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./img/card-4.jpg"
+                    alt="Наушники"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="card-footer">
                   <h2 class="cards">Проект Prime</h2>
                   <p class="cards-content">Маркетинг</p>
@@ -125,12 +144,15 @@
 
             <li class="card-item">
               <a href="" class="cards">
-                <img
-                  src="./img/card-5.jpg"
-                  alt="Две коробки"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./img/card-5.jpg"
+                    alt="Две коробки"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="card-footer">
                   <h2 class="cards">Проект Boxes</h2>
                   <p class="cards-content">Приложение</p>
@@ -140,12 +162,15 @@
 
             <li class="card-item">
               <a href="" class="cards">
-                <img
-                  src="./img/card-6.jpg"
-                  alt="Монитор с веб-сайтом"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    class="img"
+                    src="./img/card-6.jpg"
+                    alt="Монитор с веб-сайтом"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="card-footer">
                   <h2 class="cards">Inspiration has no Borders</h2>
                   <p class="cards-content">Веб-сайт</p>
@@ -155,12 +180,15 @@
 
             <li class="card-item photos">
               <a href="" class="cards">
-                <img
-                  src="./img/card-7.jpg"
-                  alt="Книга с рисунками"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    src="./img/card-7.jpg"
+                    alt="Книга с рисунками"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
                 <div class="card-footer">
                   <h2 class="cards">Издание Limited Edition</h2>
                   <p class="cards-content">Дизайн</p>
@@ -170,12 +198,15 @@
 
             <li class="card-item photos">
               <a href="" class="cards">
-                <img
-                  src="./img/card-8.jpg"
-                  alt="Бирка"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    src="./img/card-8.jpg"
+                    alt="Бирка"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
                 <div class="card-footer">
                   <h2 class="cards">Проект LAB</h2>
                   <p class="cards-content">Маркетинг</p>
@@ -185,12 +216,15 @@
 
             <li class="card-item photos">
               <a href="" class="cards">
-                <img
-                  src="./img/card-9.jpg"
-                  alt="Ноутбук с приложением"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <img
+                    src="./img/card-9.jpg"
+                    alt="Ноутбук с приложением"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+
                 <div class="card-footer">
                   <h2 class="cards">Growing Business</h2>
                   <p class="cards-content">Приложение</p>
@@ -203,16 +237,16 @@
     </main>
 
     <!--footer-->
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <!--logo-footer-->
-      <div class="container">
+      <div class="footer container">
         <a href="" class="brandname" lang="en"
           ><span class="brandname-one">Web</span
           ><span class="brandname-two">Studio</span></a
         >
         <address>
-          <ul class="list">
-            <li>
+          <ul class="footer-address list">
+            <li class="footer-item">
               <a
                 href="https://goo.gl/maps/2GUoueHVRLLiKJBr9"
                 target="_blank"
@@ -221,12 +255,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-item">
               <a href="mailto:info@devstudio.com" class="contacts-link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="footer-item">
               <a href="tel:+380961111111" class="contacts-link"
                 >+38 096 111 11 11</a
               >
