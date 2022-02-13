@@ -8,6 +8,7 @@
   --team-section-background: #f5f4fa;
   --general-margin-bottom: 94px;
   --card-set-gap: 30px;
+  --card-second-gap: 15px;
   --common-margin-gap: 50px;
   --card-border: #eeeeee;
 }
@@ -81,10 +82,15 @@ p {
 }
 
 /* header */
+.header {
+  border-bottom: 1px solid #ececec;
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .page-header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 /* navigation */
@@ -191,6 +197,7 @@ p {
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
+  padding: 10px 32px;
 
   font-weight: 700;
   font-size: 16px;
@@ -312,15 +319,7 @@ p {
 
 /* cards */
 
-.cards {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.card-set {
+/* .card-set {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
@@ -330,6 +329,37 @@ p {
   flex-basis: calc(100% / 3 -var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+} */
+
+.card-set .card-item:nth-last-child(-n + 6) {
+  margin-top: var(--card-set-gap);
+}
+.card-set .card-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card-set .card-item:last-child {
+  margin-bottom: var(--general-margin-bottom);
+}
+.card-set {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px -15px;
+  padding: 0;
+}
+.card-set .card-item {
+  margin: var(--card-second-gap) var(--card-second-gap);
+}
+
+.cards {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .cards-content {
