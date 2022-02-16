@@ -16,64 +16,64 @@
 
   <body>
     <!--Шапка-->
-    <div class="header">
-      <header class="page-header container">
-        <div class="navigation">
-          <!--brand-name-header-->
-          <a href="" class="brandname" lang="en"
-            ><span class="brandname-one">Web</span>Studio</a
-          >
-        </div>
+    <header class="header">
+      <div class="header-container container">
+        <a href="" class="brandname" lang="en"
+          ><span class="brandname-one">Web</span>Studio</a
+        >
         <!--navigation-->
-        <div class="container navigation">
-          <nav>
-            <ul class="site-nav list">
-              <li class="nav-item">
-                <a href="./index.html" class="link">Студия</a>
-              </li>
-              <li class="nav-item">
-                <a href="./portfolio.html" class="link">Портфолио</a>
-              </li>
-              <li class="nav-item"><a href="" class="link">Контакты</a></li>
-            </ul>
-            <!-- ul>li*2>p+p швидке написання коду-->
-          </nav>
-        </div>
-        <!--Contacts info-->
-        <div class="container navigation">
-          <ul class="contacts list">
+        <nav class="navigation">
+          <ul class="site-nav">
             <li class="nav-item">
-              <a href="mailto:info@devstudio.com" class="contacts-nav"
-                >info@devstudio.com</a
-              >
+              <a href="./index.html" class="link">Студия</a>
             </li>
             <li class="nav-item">
-              <a href="tel:+380961111111" class="contacts-nav"
-                >+38 096 111 11 11</a
-              >
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
-        </div>
-      </header>
-    </div>
-
+          <!-- ul>li*2>p+p швидке написання коду-->
+        </nav>
+        <!--Contacts info-->
+        <ul class="contacts">
+          <li class="nav-item">
+            <a href="mailto:info@devstudio.com" class="contacts-nav"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="tel:+380961111111" class="contacts-nav"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
     <!--main-->
     <main>
-      <section>
+      <section class="section">
         <!-- Навигация Портфолио -->
-        <h1 class="visually-hidden">Навигация Портфолио</h1>
-        <div class="button-wrapper">
-          <ul class="button-row list container">
-            <li><button type="button" class="buttons">Все</button></li>
-            <li><button type="button" class="buttons">Веб-сайты</button></li>
-            <li><button type="button" class="buttons">Приложения</button></li>
-            <li><button type="button" class="buttons">Дизайн</button></li>
-            <li><button type="button" class="buttons">Маркетинг</button></li>
-          </ul>
-        </div>
-        <!-- Карточки -->
         <div class="container">
-          <ul class="card-set list">
+          <h1 class="visually-hidden">Навигация Портфолио</h1>
+          <ul class="button-row">
+            <li class="button">
+              <button type="button" class="buttons">Все</button>
+            </li>
+            <li class="button">
+              <button type="button" class="buttons">Веб-сайты</button>
+            </li>
+            <li class="button">
+              <button type="button" class="buttons">Приложения</button>
+            </li>
+            <li class="button">
+              <button type="button" class="buttons">Дизайн</button>
+            </li>
+            <li class="button">
+              <button type="button" class="buttons">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Карточки -->
+          <ul class="card-set">
             <li class="card-item">
               <a href="" class="cards">
                 <div class="card-thumb">
@@ -180,7 +180,7 @@
               </a>
             </li>
 
-            <li class="card-item photos">
+            <li class="card-item">
               <a href="" class="cards">
                 <div class="card-thumb">
                   <img
@@ -198,7 +198,7 @@
               </a>
             </li>
 
-            <li class="card-item photos">
+            <li class="card-item">
               <a href="" class="cards">
                 <div class="card-thumb">
                   <img
@@ -216,7 +216,7 @@
               </a>
             </li>
 
-            <li class="card-item photos">
+            <li class="card-item">
               <a href="" class="cards">
                 <div class="card-thumb">
                   <img
@@ -239,15 +239,15 @@
     </main>
 
     <!--footer-->
-    <footer class="page-footer container">
+    <footer class="page-footer">
       <!--logo-footer-->
       <div class="footer container">
         <a href="" class="brandname" lang="en"
           ><span class="brandname-one">Web</span
           ><span class="brandname-two">Studio</span></a
         >
-        <address>
-          <ul class="footer-address list">
+        <address class="address">
+          <ul>
             <li class="footer-item">
               <a
                 href="https://goo.gl/maps/2GUoueHVRLLiKJBr9"
