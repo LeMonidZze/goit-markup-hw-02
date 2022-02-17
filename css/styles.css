@@ -169,11 +169,11 @@ ul {
 }
 
 /* Headings */
-.work-section {
-  padding-top: 0;
-}
 .section {
   padding: var(--general-margin-bottom) 0;
+}
+.work-section {
+  padding-top: 0;
 }
 .section-title {
   margin-bottom: 10px;
@@ -307,6 +307,9 @@ ul {
   margin-bottom: var(--common-margin-gap);
 }
 
+.button-row > .button:last-child {
+  margin-right: 0;
+}
 .button-row .button {
   margin-right: 8px;
 }
@@ -326,9 +329,6 @@ ul {
 } */
 
 .card-set .card-item:nth-last-child(-n + 6) {
-}
-.card-set .card-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .card-set {
@@ -378,4 +378,10 @@ ul {
 
 .address {
   margin-top: 20px;
+}
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
