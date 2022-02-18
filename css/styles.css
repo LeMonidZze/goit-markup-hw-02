@@ -328,8 +328,6 @@ ul {
   margin-top: var(--card-set-gap);
 } */
 
-.card-set .card-item:nth-last-child(-n + 6) {
-}
 
 .card-set {
   display: flex;
