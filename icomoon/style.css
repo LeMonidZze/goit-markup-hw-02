@@ -15,28 +15,32 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-Client-1 {
-  width: 1.84765625em;
+.icon-Twitter1 {
+  width: 1.111328125em;
 }
 
-.icon-Client-2 {
-  width: 1.84765625em;
+.icon-client {
+  width: 2.0234375em;
 }
 
-.icon-Client-3 {
-  width: 1.84765625em;
+.icon-client6 {
+  width: 2.0888671875em;
 }
 
-.icon-Client-4 {
-  width: 1.84765625em;
+.icon-client2 {
+  width: 1.3408203125em;
 }
 
-.icon-Client-5 {
-  width: 1.84765625em;
+.icon-client3 {
+  width: 0.8720703125em;
 }
 
-.icon-Client-6 {
-  width: 1.84765625em;
+.icon-client4 {
+  width: 0.76953125em;
+}
+
+.icon-client5 {
+  width: 1.0712890625em;
 }
 
 .icon-envelope-hover {

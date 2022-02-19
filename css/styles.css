@@ -228,6 +228,31 @@ ul {
   margin-left: 30px;
 }
 
+.team-social {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.social-list {
+  display: flex;
+  padding: 16px 32px 30px;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.social-item:last-child {
+  margin-left: 0;
+}
+
+.icon {
+}
+
 .team-footer {
   padding: 30px 0;
   text-align: center;
@@ -284,7 +309,7 @@ ul {
 .contacts-geoposition:focus {
   color: var(--title-accent-color);
 }
-/* contacts-icon */
+/* ICONS*/
 
 .contacts-icon {
   margin-right: 10px;
@@ -294,6 +319,9 @@ ul {
 .contacts-icon-phone {
   margin-right: 10px;
   fill: var(--paragrapg-contacts-color);
+}
+
+.social-icon {
 }
 
 /* Navigation-buttons */
