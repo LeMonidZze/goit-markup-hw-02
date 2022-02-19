@@ -8,7 +8,6 @@
   --team-section-background: #f5f4fa;
   --general-margin-bottom: 94px;
   --card-set-gap: 15px;
-  --card-second-gap: 15px;
   --common-margin-gap: 50px;
   --card-border: #eeeeee;
 }
@@ -235,6 +234,7 @@ ul {
 }
 
 /* contacts */
+
 .contacts {
   display: flex;
   margin-left: auto;
@@ -250,10 +250,14 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
 }
 .contacts-nav:hover,
 .contacts-nav:focus {
   color: var(--title-accent-color);
+  fill: var(--title-accent-color);
 }
 .contacts-link {
   color: var(--hero-accent-color);
@@ -280,6 +284,18 @@ ul {
 .contacts-geoposition:focus {
   color: var(--title-accent-color);
 }
+/* contacts-icon */
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--paragrapg-contacts-color);
+}
+
+.contacts-icon-phone {
+  margin-right: 10px;
+  fill: var(--paragrapg-contacts-color);
+}
+
 /* Navigation-buttons */
 .buttons {
   cursor: pointer;
@@ -323,11 +339,10 @@ ul {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .card-set > .card-item {
-  flex-basis: calc(100% / 3 -var(--card-set-gap));
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 } */
-
 
 .card-set {
   display: flex;
