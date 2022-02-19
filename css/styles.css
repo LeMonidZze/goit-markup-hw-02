@@ -6,6 +6,7 @@
   --hero-accent-color: #ffffff;
   --hero-background-color: #2f303a;
   --team-section-background: #f5f4fa;
+  --background-overlay: rgba(47, 48, 58, 0.4);
   --general-margin-bottom: 94px;
   --card-set-gap: 15px;
   --common-margin-gap: 50px;
@@ -130,6 +131,16 @@ ul {
   background-color: var(--hero-background-color);
   color: var(--hero-accent-color);
   padding: 200px 0;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      var(--background-overlay),
+      var(--background-overlay)
+    ),
+    url(../img/background-hero.jpg);
 }
 .hero-title {
   margin-top: 0;
