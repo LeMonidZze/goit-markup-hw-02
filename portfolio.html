@@ -20,6 +20,7 @@
 
   <body>
     <!--Шапка-->
+
     <header class="header">
       <div class="header-container container">
         <a href="" class="brandname" lang="en"
@@ -41,18 +42,29 @@
         <!--Contacts info-->
         <ul class="contacts">
           <li class="nav-item">
-            <a href="mailto:info@devstudio.com" class="contacts-nav"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="contacts-nav">
+              <svg class="contacts-icon contacts-nav" width="16" height="12">
+                <use href="./img/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="nav-item">
             <a href="tel:+380961111111" class="contacts-nav"
-              >+38 096 111 11 11</a
+              ><svg
+                class="contacts-icon-phone contacts-nav"
+                width="10"
+                height="16"
+              >
+                <use href="./img/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
     </header>
+
     <!--main-->
     <main>
       <section class="section">
@@ -243,9 +255,12 @@
     </main>
 
     <!--footer-->
+
     <footer class="page-footer">
       <!--logo-footer-->
-      <div class="footer container">
+      <ul class="footer-chunks container">
+        <li class="chunks-item">
+          <div class="footer">
         <a href="" class="brandname" lang="en"
           ><span class="brandname-one">Web</span
           ><span class="brandname-two">Studio</span></a
@@ -274,6 +289,57 @@
           </ul>
         </address>
       </div>
+    </li>
+        <li class="chunks-item">
+          <div class="footer container">
+          <h2 class="section-title">
+          <span class="footer-heading">присоединяйтесь</span>
+        </h2>
+        <ul class="footer-list">
+          <li class="footer-social-item">
+            <a href="" class="footer-link"
+              ><svg class="footer-icon">
+                <use
+                  class="footer-img"
+                  href="./img/sprite.svg#icon-instagram1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-link"
+              ><svg class="footer-icon">
+                <use
+                  class="footer-img"
+                  href="./img/sprite.svg#icon-Twitter1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-link"
+              ><svg class="footer-icon">
+                <use
+                  class="footer-img"
+                  href="./img/sprite.svg#icon-facebook1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-link"
+              ><svg class="footer-icon">
+                <use
+                  class="footer-img"
+                  href="./img/sprite.svg#icon-linkedin1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
     </footer>
+    
   </body>
 </html>
