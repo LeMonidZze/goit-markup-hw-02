@@ -416,10 +416,12 @@ ul {
 
 .contacts-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts-icon-phone {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Navigation-buttons */
@@ -482,7 +484,8 @@ ul {
   margin: var(--card-set-gap);
 }
 
-.cards:hover {
+.cards:hover,
+cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
