@@ -100,6 +100,13 @@ ul {
 .navigation {
   margin-left: 93px;
 }
+
+.niv-item {
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
 .nav-item:hover {
   fill: var(--title-accent-color);
   color: var(--title-accent-color);
@@ -124,6 +131,11 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -176,12 +188,18 @@ ul {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.06em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--hero-accent-color);
   background-color: var(--button-hover-hero);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Headings */
@@ -298,6 +316,11 @@ ul {
   text-decoration: none;
   border-radius: 50%;
   background-color: var(--hero-accent-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .social-icon {
@@ -354,6 +377,11 @@ ul {
   fill: var(--patron-customers-color);
   border-radius: 4px;
   border: 1px solid var(--patron-customers-color);
+
+  transition-property: fill, color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .client-link:hover,
 .client-link:focus {
@@ -367,13 +395,14 @@ ul {
 .contacts {
   display: flex;
   margin-left: auto;
+  color: var(--paragrapg-contacts-color);
 }
 .contacts .nav-item + .nav-item {
   margin-left: var(--common-margin-gap);
 }
 
-.contacts-nav {
-  color: var(--paragrapg-contacts-color);
+.contacts .contacts-nav {
+  color: currentColor;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -382,11 +411,27 @@ ul {
 
   display: flex;
   align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
-.contacts-nav:hover,
-.contacts-nav:focus {
+.contacts .contacts-nav:hover,
+.contacts .contacts-nav:focus {
   color: var(--title-accent-color);
 }
+
+.contacts .contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts .contacts-icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contacts-link {
   color: var(--hero-accent-color);
   opacity: 60%;
@@ -395,6 +440,11 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -407,21 +457,15 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .contacts-geoposition:hover,
 .contacts-geoposition:focus {
   color: var(--title-accent-color);
-}
-/* ICONS*/
-
-.contacts-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts-icon-phone {
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 /* Navigation-buttons */
@@ -437,12 +481,17 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
+  border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .buttons:hover,
 .buttons:focus {
   color: var(--hero-accent-color);
   background-color: var(--title-accent-color);
-  border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -484,8 +533,14 @@ ul {
   margin: var(--card-set-gap);
 }
 
+.cards {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
 .cards:hover,
-cards:focus {
+.cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -590,6 +645,11 @@ cards:focus {
   text-decoration: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .footer-icon {
