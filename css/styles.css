@@ -666,9 +666,10 @@ ul {
 
 .card-thumb {
   position: relative;
+  overflow: hidden;
 }
 
-.card-block::before {
+.card-thumb::before {
   display: block;
   position: absolute;
   content: '';
@@ -676,23 +677,24 @@ ul {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
+  opacity: 0;
+
   transform: translateY(100%);
-  transition-property: transform;
+  transition-property: transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.cards:hover .card-block::before,
-.cards:focus .card-block::before {
+.cards:hover .card-thumb::before,
+.cards:focus .card-thumb::before {
   transform: translateY(0);
+  opacity: 1;
 }
-
 .card-overlay {
   position: absolute;
   top: 0;
   left: 0;
   padding: 63px 24px;
-  display: flex;
 
   width: 100%;
   height: 100%;
@@ -711,7 +713,8 @@ ul {
   transition-delay: 0;
 }
 
-.cards:hover .card-overlay {
+.cards:hover .card-overlay,
+.cards:focus .card-overlay {
   transform: translateY(0);
 }
 
