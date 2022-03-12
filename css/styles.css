@@ -1031,6 +1031,8 @@ textarea {
 }
 
 .footer-form {
+  display: flex;
+  margin-left: 93px;
 }
 
 .subscribe-title {
@@ -1040,7 +1042,45 @@ textarea {
 }
 
 .subscribe-input {
+  width: 100%;
+  height: 50px;
 }
 
 .subscribe-email {
+}
+
+.subscribe-button {
+  background-color: var(--title-accent-color);
+  color: var(--hero-accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  padding-top: 10px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  margin-left: 12px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  letter-spacing: 0.06em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--hero-accent-color);
+  background-color: var(--button-hover-hero);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
