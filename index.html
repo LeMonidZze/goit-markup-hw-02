@@ -78,38 +78,45 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button type="button" class="modal-button" data-modal-close> &#215 </button>
-              <form action="" class="form">
+              <form class="form" autocomplete="off">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-                <label for="name" class="form-field">
-                  <input type="text" class="form-input" name="name" placeholder=" ">
+               <label for="name" class="form-field">
+                  <input type="text" class="form-input" name="name" autofocus>
                   <span class="form-label">Имя</span>
-                  <span class="form-icon"></span>
+                  <svg class="form-icon" width="20" height="20">
+                <use href="./img/sprite.svg#icon-name"></use>
+              </svg>
                 </label>
 
                 <label for="tel" class="form-field">
-                  <input type="tel" class="form-input" name="tel" placeholder=" ">
+                  <input type="tel" class="form-input" name="tel">
                   <span class="form-label">Телефон</span>
-                  <span class="form-icon"></span>
+                  <svg class="form-icon" width="20" height="20">
+                <use href="./img/sprite.svg#icon-tel"></use>
+              </svg>
                 </label>
 
                 <label for="email" class="form-field">
-                  <input type="email" class="form-input" name="email" placeholder=" ">
+                  <input type="email" class="form-input" name="email">
                   <span class="form-label">Почта</span>
-                  <span class="form-icon"></span>
+                  <svg class="form-icon" width="20" height="20">
+                <use href="./img/sprite.svg#icon-email"></use>
+              </svg>
                 </label>
 
-                <label for="comment" class="form-field">
-                  <textarea name="comment" id="" cols="30" rows="10" placeholder="Введите текст">Комментарий</textarea>
+                <label for="comment" class="form-field"><span class="form-label">Комментарий</span>
+                  <textarea class="form-comment" name="comment" placeholder="Введите текст"></textarea>
                 </label>
 
-                <label for="agreement" class="form-field">
-                  <input type="checkbox" class="form-input" name="agreement" placeholder="">
-                  <span class="section-content">Соглашаюсь с рассылкой и принимаю <a class="form-agreement"> Условия договора</a>
-                </span>
+                <label for="agreement" class="form-agreement">
+                  <input type="checkbox" class="form-checkbox" name="agreement" value="agreement" checked>
+                  <span class="checkbox-icon"></span>
+                  <span class="section-content">Соглашаюсь с рассылкой и принимаю <a class="form-policy" href=""> Условия договора</a>
+                  </span>
                 </label>
 
-                <button class="form-button">Закрыть</button>
+                <button class="form-button" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -573,7 +580,16 @@
           </li>
         </ul>
       </div>
+      <div class="footer-form">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <label for="subscribe-form" class="footer-subscribe">
+          <input type="subscribe-email" name="subscribe-form" class="subscribe-input">
+          <span class="subscribe-email"></span>
+        </label>
+        
+        <button></button>
       </div>
+    </div>
        </footer>
       
     
