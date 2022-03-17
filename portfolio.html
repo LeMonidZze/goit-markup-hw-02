@@ -318,7 +318,7 @@
 
     <footer class="page-footer"><!--logo-footer-->
       <div class="container footer">
-<div>
+        <div class="footer-address">
         <a href="" class="brandname" lang="en"
           ><span class="brandname-one">Web</span
           ><span class="brandname-two">Studio</span></a
@@ -394,18 +394,18 @@
           </li>
         </ul>
       </div>
-      <div class="footer-form">
+      <div class="footer-box">
         <h2 class="work-actions-content">Подпишитесь на рассылку</h2>
-        <ul class="footer-list">
-          <li class="footer-form-list">
-            <label for="subscribe-form" class="footer-subscribe">
-              <input type="subscribe-email" name="subscribe-form" class="subscribe-input" placeholder="E-mail">
-            </label>
-          </li>
-      <li class="footer-form-list">
-        <button type="submit" class="subscribe-button">Подписаться</button>
-      </li>
-        </ul>
+        <form class="footer-form">
+        <label for="subscribe-form" class="footer-subscribe">
+              <input type="subscribe-email" name="subscribe-form" class="subscribe-input" placeholder="E-mail" autocomplete="on">
+        </label>
+        <button type="submit" class="subscribe-button">Подписаться
+          <svg class="footer-form-icon">
+            <use href="./img/sprite.svg#icon-paperplane"></use>
+          </svg>
+        </button>
+        </form>
       </div>
     </div>
        </footer>
