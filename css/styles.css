@@ -76,7 +76,7 @@ textarea {
 }
 
 /* brandname */
-.brandname {
+.logo {
   /* --new-accent: red: окремий акцент доступний тільки в 1 секції */
   color: var(--primary-text-color);
   text-decoration: none;
@@ -85,18 +85,18 @@ textarea {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.brandname-one {
+.page-header__logo {
   color: var(--title-accent-color);
 }
-.brandname-two {
+.page-header__logo--white {
   color: var(--hero-accent-color);
 }
 
 /* header */
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
@@ -106,28 +106,28 @@ textarea {
   margin-left: 93px;
 }
 
-.nav-item {
+.navigation__item {
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.nav-item:hover {
+.navigation__item:hover {
   fill: var(--title-accent-color);
   color: var(--title-accent-color);
 }
 
 /* site-nav */
-.site-nav {
+.navigation__list {
   display: flex;
 }
-.site-nav .nav-item {
+.navigation__item {
   margin-right: var(--common-margin-gap);
 }
-.site-nav .nav-item:last-child {
+.navigation__item:last-child {
   margin-right: 0;
 }
-.site-nav .link {
+.navigation__link {
   padding: 32px 0;
   display: block;
   position: relative;
@@ -144,16 +144,16 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--title-accent-color);
 }
 
-.site-nav .link:active {
+.navigation__link--active {
   color: var(--title-accent-color);
 }
 
-.site-nav .link:active::after {
+.navigation__link--active::after {
   content: '';
 
   display: block;
@@ -724,11 +724,8 @@ textarea {
   margin-left: auto;
   color: var(--paragrapg-contacts-color);
 }
-.contacts .nav-item + .nav-item {
-  margin-left: var(--common-margin-gap);
-}
 
-.contacts .contacts-nav {
+.contacts__link {
   color: currentColor;
   text-decoration: none;
   font-weight: 500;
@@ -744,17 +741,17 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.contacts .contacts-nav:hover,
-.contacts .contacts-nav:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--title-accent-color);
 }
 
-.contacts .contacts-icon {
+.contacts__icon-mail {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts .contacts-icon-phone {
+.contacts__icon-phone {
   margin-right: 10px;
   fill: currentColor;
 }
