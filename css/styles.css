@@ -46,6 +46,7 @@ textarea {
 }
 
 /* hidden headings */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -852,31 +853,31 @@ textarea {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* cards */
+/* card-set__link */
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
-.card-set .card-item {
+.card-set .card-set__item {
   margin: var(--card-set-gap);
 }
 
-.cards {
+.card-set__link {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.cards:hover,
-.cards:focus {
+.card-set__link:hover,
+.card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   opacity: 1;
 }
 
-.cards {
+.card-set__link {
   display: block;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -886,14 +887,14 @@ textarea {
   letter-spacing: 0.06em;
 }
 
-.cards-heading {
+.card-set__heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.cards-content {
+.card-set__content {
   color: var(--paragrapg-contacts-color);
   font-weight: 400;
   font-size: 16px;
@@ -902,12 +903,12 @@ textarea {
   margin-top: 4px;
 }
 
-.card-thumb {
+.card-set__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.card-thumb::before {
+.card-set__thumb::before {
   display: block;
   position: absolute;
   content: '';
@@ -923,12 +924,12 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.cards:hover .card-thumb::before,
-.cards:focus .card-thumb::before {
+.card-set__link:hover .card-set__thumb::before,
+.card-set__link:focus .card-set__thumb::before {
   transform: translateY(0);
   opacity: 1;
 }
-.card-overlay {
+.card-set__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -951,8 +952,8 @@ textarea {
   transition-delay: 0;
 }
 
-.cards:hover .card-overlay,
-.cards:focus .card-overlay {
+.card-set__link:hover .card-set__overlay,
+.card-set__link:focus .card-set__overlay {
   transform: translateY(0);
 }
 
