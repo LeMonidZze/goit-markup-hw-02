@@ -102,6 +102,10 @@ textarea {
 
 /* navigation */
 .navigation {
+  display: flex;
+}
+
+.header-navigation {
   margin-left: 93px;
 }
 
