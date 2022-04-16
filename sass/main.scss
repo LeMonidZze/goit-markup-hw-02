@@ -1,4 +1,14 @@
 // незабувай крапку з комою в кінці!!!
-@import "./components/components";
+@import "./variables/variables";
+@import "./base/base";
+@import "./base/reset";
+@import "./utils/visually-hidden";
+@import "./components/container";
+@import './components/logo';
+@import "./components/page-header";
+@import "./components/navigation";
+@import "./components/hero";
+@import "./components/form/modal";
+
 
 

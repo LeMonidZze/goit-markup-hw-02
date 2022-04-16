@@ -1,1 +1,211 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+:root {
+  --primary-text-color: #212121;
+  --title-accent-color: #2196f3;
+  --button-hover-hero: #188ce8;
+  --paragrapg-contacts-color: #757575;
+  --hero-accent-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-section-background: #f5f4fa;
+  --patron-customers-color: #afb1b8;
+  --background-overlay: rgba(47, 48, 58, 0.4);
+  --general-margin-bottom: 94px;
+  --card-set-gap: 15px;
+  --common-margin-gap: 50px;
+  --card-border: #eeeeee;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--hero-accent-color);
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  /* --new-accent: red: окремий акцент доступний тільки в 1 секції */
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  color: var(--title-accent-color);
+}
+
+.navigation__link {
+  padding: 32px 0;
+  display: block;
+  position: relative;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-header {
+  margin-left: 93px;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: var(--common-margin-gap);
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.navigation__item:hover {
+  fill: var(--title-accent-color);
+  color: var(--title-accent-color);
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--title-accent-color);
+}
+
+.navigation__link--active {
+  color: var(--title-accent-color);
+}
+
+.navigation__link--active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--title-accent-color);
+  border-radius: 2px;
+}
+
+.hero {
+  background-color: var(--hero-background-color);
+  color: var(--hero-accent-color);
+  padding: 200px 0;
+  max-width: 1600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(to right, var(--background-overlay), var(--background-overlay)), url(../img/background-hero.jpg);
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  background-color: var(--title-accent-color);
+  color: var(--hero-accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  color: var(--hero-accent-color);
+  background-color: var(--button-hover-hero);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/*# sourceMappingURL=main.css.map */

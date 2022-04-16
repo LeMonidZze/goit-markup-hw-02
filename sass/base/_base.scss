@@ -1,0 +1,14 @@
+body {
+    color: var(--primary-text-color);
+    background-color: var(--hero-accent-color);
+    font-family: Roboto, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+
