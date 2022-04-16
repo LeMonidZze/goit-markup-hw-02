@@ -1,5 +1,4 @@
-@import ".../utils/animation";
-
+@import "../utils/animations";
 .backdrop {
     position: fixed;
     top: 0;
@@ -11,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
 
-    @include transition-property(opacity);
+    @extend %animation;
 }
 
 .backdrop.is-hidden {
@@ -31,8 +30,7 @@
     width: 530px;
 
     transform: translate(-50%, -50%) scale(1);
-    
-    @include transition-property(transform);
+    @extend %animation;
 
     background-color: #fff;
 }
@@ -52,7 +50,8 @@
 
     cursor: pointer;
 
-    @include transition-property(color);
+    transition-property: color;
+    @extend %animation;
 }
 
 .modal__button:hover,
