@@ -62,13 +62,13 @@ letter-spacing: 0.06em;
         transform: translateY(100%);
         transition-property: transform, opacity;
         @extend %animation;
-
-        .card-set__link:hover &::before,
-        .card-set__link:focus &::before {
-            transform: translateY(0);
-            opacity: 1;
-        }
     }
+}
+
+.card-set__link:hover .card-set__thumb::before,
+.card-set__link:focus .card-set__thumb::before {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .card-set__overlay {

@@ -855,8 +855,8 @@ textarea {
   transition-property: transform, opacity;
 }
 
-.card-set__link:hover .card-set__thumb::before::before,
-.card-set__link:focus .card-set__thumb::before::before {
+.card-set__link:hover .card-set__thumb::before,
+.card-set__link:focus .card-set__thumb::before {
   transform: translateY(0);
   opacity: 1;
 }
