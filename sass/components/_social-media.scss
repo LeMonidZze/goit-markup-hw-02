@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     margin-top: 15px;
+}
 
-    &>.social__item {
-        margin-right: 10px;
-    }
-    
-    &>.social__item:last-child {
-        margin-right: 0;
-    }
+.social>.social__item {
+    margin-right: 10px;
+}
+
+.social>.social__item:last-child {
+    margin-right: 0;
 }
 
 .social__item {

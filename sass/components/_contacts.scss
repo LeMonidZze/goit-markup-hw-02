@@ -1,6 +1,9 @@
 @import "../utils/animations";
 .contacts {
+  
     display: flex;
+    display: none;
+
     margin-left: auto;
     color: var(--paragrapg-contacts-color);
 }
