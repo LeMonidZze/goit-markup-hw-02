@@ -1,21 +1,21 @@
 @import "../utils/animations";
 
-.portfolio-navigation__list {
+.portfolio {
     display: flex;
     justify-content: center;
 
     margin-bottom: var(--common-margin-gap);
 
-    &>.portfolio-navigation__item:last-child {
+    &>.portfolio__item:last-child {
         margin-right: 0;
     }
     
-    & .portfolio-navigation__item {
+    & .portfolio__item {
         margin-right: 8px;
     }
 }
 
-.portfolio-navigation__button {
+.portfolio__button {
     cursor: pointer;
     background-color: var(--team-section-background);
     color: var(--primary-text-color);

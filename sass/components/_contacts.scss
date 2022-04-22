@@ -5,6 +5,23 @@
     color: var(--paragrapg-contacts-color);
 }
 
+.contacts__item {
+    margin-right: var(--common-margin-gap);
+    
+    transition-property: fill,
+    color;
+    @extend %animation;
+    
+    &:hover {
+        fill: var(--title-accent-color);
+        color: var(--title-accent-color);
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
 .contacts__link {
     color: currentColor;
     text-decoration: none;
@@ -25,12 +42,8 @@
     }
 }
 
-.contacts__icon-mail {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.contacts__icon-phone {
-    margin-right: 10px;
-    fill: currentColor;
-}

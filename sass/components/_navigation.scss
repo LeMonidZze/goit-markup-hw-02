@@ -3,10 +3,10 @@
 
 .navigation {
     display: flex;
-}
 
-.navigation-header {
-    margin-left: 93px;
+    &--header {
+        margin-left: 93px;
+    }
 }
 
 .navigation__list {

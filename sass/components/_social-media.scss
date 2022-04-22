@@ -1,25 +1,25 @@
 @import "../utils/animations";
-.social-media__list {
+.social {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 
-    &>.social-media__item {
+    &>.social__item {
         margin-right: 10px;
     }
     
-    &>.social-media__item:last-child {
+    &>.social__item:last-child {
         margin-right: 0;
     }
 }
 
-.social-media__item {
+.social__item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social-media__link {
+.social__link {
     color: var(--patron-customers-color);
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@
     }
 }
 
-.social-media__icon {
+.social__icon {
     fill: currentColor;
     width: 20px;
     height: 20px;

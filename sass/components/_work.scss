@@ -1,8 +1,8 @@
-.work-section {
+.section--no_padding_top {
     padding-top: 0;
 }
 
-.work-section__heading {
+.work__heading {
     margin-bottom: 50px;
 
     text-align: center;
@@ -15,12 +15,12 @@
     color: var(--primary-text-color);
 }
 
-.work-section__thumb {
+.work__thumb {
     position: relative;
     display: block;
 }
 
-.work-section__actions {
+.work__actions {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -35,11 +35,19 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-section__content {
+.work__content {
     color: var(--hero-accent-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.work__list {
+    display: flex;
+}
+
+.work__list .work__item+.work__item {
+    margin-left: 30px;
 }
